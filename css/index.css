@@ -9,7 +9,7 @@
 
 .bgimg {
     position: static;
-    
+
     margin: 2.5rem;
     height: 50vh;
     overflow: hidden;
@@ -116,17 +116,19 @@
     margin-bottom: 0.75rem;
 }
 
-.todo-detail .pri >p {
+.todo-detail .pri>p {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     margin-right: 1rem;
 }
-.pri{
+
+.pri {
     display: flex;
     justify-content: start;
     align-items: center;
 }
-.pri >button{
+
+.pri>button {
     /* height: 50%; */
     text-align: cen;
     /* margin: rem; */
@@ -138,19 +140,24 @@
     letter-spacing: 0.5rem;
     /* margin-bottom: 0.75rem; */
 }
-.parent{
+
+.parent {
     position: static;
 }
-.popup{
+
+.popup {
+
     position: fixed;
     top: 0px;
-height: 100vh;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.436);
 }
-.form{
+
+.form {
     margin-top: 4rem;
     height: 55%;
     width: 40%;
@@ -160,4 +167,7 @@ align-items: center;
     border-radius: 1rem;
     box-shadow: 0 0 1.25rem 0 rgb(161, 161, 161);
     padding: 4rem;
+}
+.d-none {
+    display: none;
 }
