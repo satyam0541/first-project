@@ -33,7 +33,6 @@
 
 .box {
     margin-top: 6rem;
-    /* border: 1px solid black; */
     height: 70%;
     width: 60%;
     background-color: none;
@@ -47,7 +46,6 @@
     align-items: center;
     height: 10%;
     width: 100%;
-    /* border: 2px solid black; */
     background-color: none;
 }
 
@@ -62,7 +60,6 @@
     border-radius: 2.5rem;
     height: 90%;
     width: 100%;
-    /* border: 2px solid black; */
     background-color: white;
     box-shadow: 0 0 1.25rem 0 rgb(161, 161, 161);
 }
@@ -75,7 +72,6 @@
 }
 
 .todo {
-    /* width: 10rem; */
     font-size: 3rem;
     letter-spacing: 0.75rem;
     text-align: center;
@@ -83,7 +79,7 @@
 }
 
 .todo-item {
-    height: 25rem;
+    height: 6.75rem;
     padding: 0rem 2rem;
     border-bottom: 2px solid rgb(179, 179, 179);
     display: flex;
@@ -129,16 +125,13 @@
 }
 
 .pri>button {
-    /* height: 50%; */
-    text-align: cen;
-    /* margin: rem; */
+    text-align: center;
     color: white;
     border: none;
     background-color: red;
     border-radius: 1rem;
     font-size: 1.5rem;
-    letter-spacing: 0.5rem;
-    /* margin-bottom: 0.75rem; */
+    letter-spacing: 0.25rem;
 }
 
 .parent {
@@ -146,7 +139,6 @@
 }
 
 .popup {
-
     position: fixed;
     top: 0px;
     height: 100vh;
@@ -166,8 +158,36 @@
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 0 1.25rem 0 rgb(161, 161, 161);
-    padding: 4rem;
+    padding: 2rem 7rem;
 }
+
+.form>input {
+    border: 0.8px solid #367BF5;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+    border-color: #367BF5;
+    background-color: #c481ff60;
+}
+
+.form>textarea {
+    border-radius: 2.75rem;
+    margin-bottom: 1rem;
+    border-color: #367BF5;
+    background-color: #c481ff60;
+    resize: none;
+}
+
+.form>label {
+    padding: 0.25rem 1rem;
+}
+
+.form>div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.25rem 1rem;
+}
+
 .d-none {
     display: none;
 }

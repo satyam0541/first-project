@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <section class="parent">
         <section class="bgimg">
@@ -19,7 +21,27 @@
                     <div><button id="addbtn" class="addbtn">Add todo </button></div>
                     <p class="todo">Todo</p>
                 </section>
-                <section class="view-list">
+                <section id="list" class="view-list">
+                    <section class="todo-item">
+                        <section class="todo-detail">
+                            <section class="pri">
+                                <p>Complete html learning</p><button style="background-color: red ;">!!!</button>
+                            </section>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, veritatis.</div>
+                        </section>
+                        <section class="del-btn"><button><i class="fa fa-trash" aria-hidden="true"></i></button>
+                        </section>
+                    </section>
+                    <section class="todo-item">
+                        <section class="todo-detail">
+                            <section class="pri">
+                                <p>Complete html learning</p><button style="background-color: red ;">!!!</button>
+                            </section>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, veritatis.</div>
+                        </section>
+                        <section class="del-btn"><button><i class="fa fa-trash" aria-hidden="true"></i></button>
+                        </section>
+                    </section>
                     <section class="todo-item">
                         <section class="todo-detail">
                             <section class="pri">
@@ -77,14 +99,16 @@
     <section class="popup d-none">
         <section class="form">
             <label for="text">TODO name</label>
-            <input type="text">
+            <input id="name" type="text">
             <label for="text">Description</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="description" cols="30" rows="10"></textarea>
             <label for="text">Priority</label>
-            <input type="text">
-            <div><button id="savebtn">Save</button><button id="canbtn">cancel</button></div>
+            <input id="priority" type="text">
+            <div><button class="addbtn" id="savebtn">Save</button><button class="addbtn"
+                    style="background-color: #EA3D2F;" id="canbtn">cancel</button></div>
         </section>
     </section>
     <script src="./js/index.js"></script>
 </body>
+
 </html>
