@@ -149,6 +149,14 @@
     background-color: rgba(0, 0, 0, 0.436);
 }
 
+.popup {
+    z-index: 2000;
+}
+
+.form {
+    z-index: 2001;
+}
+
 .form {
     margin-top: 4rem;
     height: 55%;
@@ -171,11 +179,24 @@
 }
 
 .form>textarea {
-    border-radius: 2.75rem;
+    border-radius: 1rem;
     margin-bottom: 1rem;
+    border: 0.8px solid #367BF5;
+    padding: 0.75rem;
     border-color: #367BF5;
     background-color: #c481ff60;
     resize: none;
+}
+
+.priority-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.priority-group input[type="radio"] {
+    margin-right: 0.35rem;
 }
 
 .form>label {
@@ -190,4 +211,25 @@
 
 .d-none {
     display: none;
+}
+
+.toast-notice {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: #367BF5;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 0.75rem;
+    z-index: 3000;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    box-shadow: 0 6px 18px rgba(54,123,245,0.22);
+    pointer-events: auto;
+    font-weight: 600;
+}
+.toast-notice.show {
+    opacity: 1;
+    transform: translateY(0);
 }

@@ -22,76 +22,6 @@
                     <p class="todo">Todo</p>
                 </section>
                 <section id="list" class="view-list">
-                    <section class="todo-item">
-                        <section class="todo-detail">
-                            <section class="pri">
-                                <p>Complete html learning</p><button style="background-color: red ;">!!!</button>
-                            </section>
-                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, veritatis.</div>
-                        </section>
-                        <section class="del-btn"><button><i class="fa fa-trash" aria-hidden="true"></i></button>
-                        </section>
-                    </section>
-                    <section class="todo-item">
-                        <section class="todo-detail">
-                            <section class="pri">
-                                <p>Complete html learning</p><button style="background-color: red ;">!!!</button>
-                            </section>
-                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, veritatis.</div>
-                        </section>
-                        <section class="del-btn"><button><i class="fa fa-trash" aria-hidden="true"></i></button>
-                        </section>
-                    </section>
-                    <section class="todo-item">
-                        <section class="todo-detail">
-                            <section class="pri">
-                                <p>Complete html learning</p><button style="background-color: red ;">!!!</button>
-                            </section>
-                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, veritatis.</div>
-                        </section>
-                        <section class="del-btn"><button><i class="fa fa-trash" aria-hidden="true"></i></button>
-                        </section>
-                    </section>
-                    <section class="todo-item">
-                        <section class="todo-detail">
-                            <section class="pri">
-                                <p>Complete html learning</p><button style="background-color: red ;">!!!</button>
-                            </section>
-                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, veritatis.</div>
-                        </section>
-                        <section class="del-btn"><button><i class="fa fa-trash" aria-hidden="true"></i></button>
-                        </section>
-                    </section>
-                    <section class="todo-item">
-                        <section class="todo-detail">
-                            <section class="pri">
-                                <p>Complete html learning</p><button style="background-color: red ;">!!!</button>
-                            </section>
-                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, veritatis.</div>
-                        </section>
-                        <section class="del-btn"><button><i class="fa fa-trash" aria-hidden="true"></i></button>
-                        </section>
-                    </section>
-                    <section class="todo-item">
-                        <section class="todo-detail">
-                            <section class="pri">
-                                <p>Complete html learning</p><button style="background-color: red ;">!!!</button>
-                            </section>
-                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, veritatis.</div>
-                        </section>
-                        <section class="del-btn"><button><i class="fa fa-trash" aria-hidden="true"></i></button>
-                        </section>
-                    </section>
-                    <section class="todo-item">
-                        <section class="todo-detail">
-                            <section class="pri">
-                                <p>Complete html learning</p><button style="background-color: red ;">!!!</button>
-                            </section>
-                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, veritatis.</div>
-                        </section>
-                        <section class="del-btn"><button><i class="fa fa-trash" aria-hidden="true"></i></button>
-                        </section>
-                    </section>
                 </section>
             </section>
         </section>
@@ -103,7 +33,11 @@
             <label for="text">Description</label>
             <textarea name="" id="description" cols="30" rows="10"></textarea>
             <label for="text">Priority</label>
-            <input id="priority" type="text">
+            <div class="priority-group">
+                <label><input type="radio" name="priority" value="high"> High</label>
+                <label><input type="radio" name="priority" value="medium"> Medium</label>
+                <label><input type="radio" name="priority" value="low"> Low</label>
+            </div>
             <div><button class="addbtn" id="savebtn">Save</button><button class="addbtn"
                     style="background-color: #EA3D2F;" id="canbtn">cancel</button></div>
         </section>
